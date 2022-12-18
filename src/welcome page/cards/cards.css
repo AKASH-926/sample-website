@@ -1,0 +1,11 @@
+#card-box{
+    width: 80%;
+    text-align: center;
+    margin: 25px;;
+}
+
+#card-area{
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 3%;
+}

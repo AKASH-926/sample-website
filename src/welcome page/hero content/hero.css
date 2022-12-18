@@ -1,0 +1,24 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+#hero-box{
+    width: 50%;
+    height: 500px;
+
+}
+#hero-box>img{
+    width: 200%;
+    height: 100%;
+    border: 0;
+    margin: 0;
+}
+#welcome_head{
+position: absolute;
+    top: 150px;
+    left: 50px;
+    
+}
+#welcome_head >span{
+    font-size: 120px;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}

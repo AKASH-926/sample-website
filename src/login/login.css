@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+#log-body{
+    display: flex;
+    justify-content: center;
+    margin-top: 8%;
+    
+}
+
+#login-container{
+display: grid;
+grid-template-columns: 50% 50%;
+box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.579);
+width: 50%;
+font-family: 'Raleway', sans-serif;
+}
+#log_img{
+    width:100%;
+    
+}
+#img_login{
+    width: 100%;
+}
+#log_head{
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 10%;
+}
+#login-box{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    font-family: 'Raleway', sans-serif;
+}
+.margin-5per{
+margin-bottom: 5%;
+}
+#logged{
+    font-size: xx-small;
+}
+#log_butn{
+    width: 100%;
+   height: 30px;
+   cursor: pointer;
+   background-color: rgb(255, 227, 48);
+   color: rgb(0, 11, 113);
+   font-weight: 1000;
+font-family: 'Raleway', sans-serif;
+border: 0;
+transition: 400ms;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.61);
+}
+#log_butn:hover{
+    transform: scale(1.1);
+    background-color: green;
+    color: white;
+}
+.log_inp{
+    border: 0px;
+    border-bottom:1px solid black;
+    height: 20px;
+    width: 100%;
+    
+}
+.alert{
+    font-size: x-small;
+    color: red;
+    margin: 0;
+    margin-top: 1%;
+}
+#forgot{
+    width: 100%;
+}
+#fogo_butn{
+    width: 100px;
+    font-size: 9px;
+    border: 0;
+    background-color: white;
+    cursor: pointer;
+    color: gray;
+}

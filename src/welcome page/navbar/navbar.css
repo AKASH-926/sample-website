@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+#navbar-box{
+    width: 100%;
+    margin-top: 0;
+        /* position: sticky;
+        top: 0px; */
+      
+}
+#nav-list{
+    display: grid;
+    grid-template-columns: 45% 8% 12% 16% 9% 2%;
+    margin-bottom: 1%;
+font-family: 'Raleway', sans-serif;
+font-size: x-large;
+    margin-top: 1%;
+    list-style: none;
+    color: white;
+    background-color: black;
+    margin: 0;
+    padding-top: 1%;
+    padding-bottom: 1%;
+   
+}
+.links{
+    color: white;
+    text-decoration: none;
+}
