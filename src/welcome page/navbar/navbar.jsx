@@ -2,6 +2,9 @@ import React from 'react'
 import "../navbar/navbar.css"
 import { Link } from "react-router-dom"
 export default function Navbar() {
+    const handleLogout = () => {
+        window.localStorage.removeItem("token")
+    }
     return (
         <>
             <div id='navbar-box'>
@@ -11,7 +14,7 @@ export default function Navbar() {
                         <li> <Link className='links' to={"/mypage"}>HOME</Link></li>
                         <li><Link className='links' to={"/mypage"}>ABOUT US</Link></li>
                         <li><Link className='links' to={"/mypage"}>CONTACT US</Link></li>
-                        <li><Link className='links' to={"/login"}>LOGOUT</Link></li>
+                        <li onClick={handleLogout}><Link className='links' to={"/login"}>LOGOUT</Link></li>
                     </ul>
 
                 </nav>

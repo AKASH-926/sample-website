@@ -1,6 +1,6 @@
 import React from "react"
 import { useState } from "react"
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import "../signup/signup.css"
 const Signup = () => {
     const [user, setuser] = useState({ name: "", email: "", password: "", confirmPassword: "" })
@@ -19,7 +19,7 @@ const Signup = () => {
         })
         const data = await response.json()
         console.log(data)
-        if (data.status === "failure" || !data || data.status == 400) {
+        if (data.status === "failure" || !data || data.status === 400) {
             window.alert(data.message)
             window.alert("Signing up failed")
             console.log("Signup Not succesfull");
@@ -106,6 +106,9 @@ const Signup = () => {
                                     <button onClick={handleclick} >SIGNUP</button>
                                 </div>
                             </form>
+                            <div className='sign_log_route'>
+                                <Link to={"/login"}>Aldready have Account?<span className='feature-text'>Login!!</span> </Link>
+                            </div>
 
                         </div>
 

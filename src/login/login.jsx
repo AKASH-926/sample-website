@@ -75,8 +75,8 @@ export default function Login() {
 
                                 </div>
                                 <button id='log_butn' onClick={handlelogin}>LOGIN</button>
-                                <div id='signup_route'>
-                                    <Link to={"/"}> Don't have Account? Signup</Link>
+                                <div className='sign_log_route'>
+                                    <Link to={"/"}> Don't have Account?<span className='feature-text'>Signup!!</span> </Link>
                                 </div>
 
                             </form>

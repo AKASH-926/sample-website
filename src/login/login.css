@@ -80,3 +80,22 @@ box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.61);
     cursor: pointer;
     color: gray;
 }
+.sign_log_route{
+        margin-top: 1%;
+}
+.sign_log_route>a{
+    text-decoration: none;
+    margin-top: 2%;
+    font-size: 20px;
+}
+.feature-text{
+    color: rgb(26, 26, 26);
+    font-weight: 600;
+    transition: 112ms;
+    
+}
+.feature-text:hover{
+    color: rgb(255, 4, 4);
+    transform: scale(1.3);
+    
+}
