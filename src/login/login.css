@@ -50,6 +50,7 @@ font-family: 'Raleway', sans-serif;
 border: 0;
 transition: 400ms;
 box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.61);
+margin-bottom: 3%;
 }
 #log_butn:hover{
     transform: scale(1.1);
@@ -59,9 +60,9 @@ box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.61);
 .log_inp{
     border: 0px;
     border-bottom:1px solid black;
-    height: 20px;
+    height: 25px;
     width: 100%;
-    
+    padding-left: 3%;
 }
 .alert{
     font-size: x-small;
@@ -81,12 +82,14 @@ box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.61);
     color: gray;
 }
 .sign_log_route{
-        margin-top: 1%;
+        margin-top: 2%;
+        
 }
 .sign_log_route>a{
     text-decoration: none;
-    margin-top: 2%;
+    margin-top: 1%;
     font-size: 20px;
+
 }
 .feature-text{
     color: rgb(26, 26, 26);

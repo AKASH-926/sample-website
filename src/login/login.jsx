@@ -11,7 +11,7 @@ export default function Login() {
         if (data.email === "" || data.password === "") {
             return alert(" Enter the credentials")
         }
-        const { email, password, check } = data
+        const { email, password } = data
         const response = await fetch("http://localhost:8000/nosebook/login", {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
@@ -28,14 +28,14 @@ export default function Login() {
             console.log("Login Not succesfull");
         } else {
             window.localStorage.setItem('token', data1.token)
-            window.alert("Login succesfull")
-            console.log("login succesfull");
+            // window.alert("Login succesfull")
             setdata({ ...data, email: "", password: "", check: true })
             navigate('/mypage');
         }
     }
     return (
         <>
+
             <div id='log-body'>
                 <div id='login-container'>
                     <div id='log_img'>
