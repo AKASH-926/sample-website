@@ -5,6 +5,7 @@ import "../login/login.css"
 export default function Login() {
     const [data, setdata] = useState({ email: "", password: "", check: false })
     const [verify, setverify] = useState({ email: true })
+    const [showpass, setshowpass] = useState(true)
     const navigate = useNavigate();
     const handlelogin = async (e) => {
         e.preventDefault()
@@ -63,9 +64,14 @@ export default function Login() {
                                 </div>
                                 <div className='margin-5per'>
                                     <label htmlFor="password">Password</label> <br />
-                                    <input className='log_inp' type="password" name="l_password" id="l_password" value={data.password} onChange={(e) => {
+                                    <input className='log_inp' type={showpass ? "password" : "text"} name="l_password" id="l_password" value={data.password} onChange={(e) => {
                                         setdata({ ...data, password: e.target.value })
                                     }} />
+                                    {showpass ? <img className='eye' src="/closedeye.png" alt="eye" onClick={() => {
+                                        setshowpass(!showpass)
+                                    }} /> : <img className='eye' src="/eye.png" alt="eye" onClick={() => {
+                                        setshowpass(!showpass)
+                                    }} />}
                                 </div>
                                 <div className='margin-5per'>
                                     <input type="checkbox" name="checkbox" id="checkbox" onChange={() => {

@@ -16,9 +16,7 @@ export default function Navbar() {
                         <li><Link className='links' to={"/mypage"}>CONTACT US</Link></li>
                         <li onClick={handleLogout}><Link className='links' to={"/login"}>LOGOUT</Link></li>
                     </ul>
-
                 </nav>
-
             </div>
         </>
     )
